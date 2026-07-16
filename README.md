@@ -38,3 +38,5 @@ Schema Optimization: Structuring the data into a Star Schema, separating Fact ta
 7. Email Mapping: The data model includes specific email columns (Agent Mail, RM Mail, ZM Mail) to facilitate dynamic filtering.
 8. DAX Security Roles: In Power BI Desktop, roles are created (e.g., "Agent", "Regional Manager") using DAX filters. A standard dynamic RLS DAX filter uses the USERPRINCIPALNAME() function. For example, the Agent role would have a filter on the employee table like: [Agent Mail] = USERPRINCIPALNAME().
 9. Power BI Service Assignment: Once published to the Power BI Service, users (or Azure Active Directory Security Groups) are assigned to these roles. When a Zonal Manager logs in, the RLS dynamically filters the entire dashboard to show only the aggregated performance of their subordinate Regional Managers and Sales Agents.
+
+10. https://github.com/SurendraSingh7310/Insurance-premium-and-payout-KPI-dashboard/blob/main/Insurance%20premium%20and%20payout%20KPI%20dashboard%201.png
